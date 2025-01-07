@@ -238,6 +238,7 @@ jobs:
         cp android-kernel/out/arch/${{ env.ARCH }}/boot/${{ env.KERNEL_IMAGE_NAME }} ./tmp/kernel
         ./magiskboot repack boot.img 
         cp new-boot.img $GITHUB_WORKSPACE/kernel_workspace/boot.img
+        cd ..
         if [ -f boot.img ]; then
             echo "MAKE_BOOT_IMAGE_IS_OK=true" >> $GITHUB_ENV
         else
