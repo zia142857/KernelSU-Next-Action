@@ -227,7 +227,8 @@ jobs:
       if: env.HAVE_SOURCE_BOOT_IMAGE == 'true' && env.CHECK_FILE_IS_OK == 'true' && env.BUILD_BOOT_IMG == 'true'
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        wget https://github.com/tomxi1997/KernelSU-Next-Action/releases/download/v1/magiskboot
+        wget https://github.com/tomxi1997/KernelSU-Next-Action/releases/download/v1/magiskboot.tar.xz
+        tar -xf magiskboot.tar.xz
         sudo chmod +x magiskboot
         mkdir -p ./tmp
         cp magiskboot ./tmp
