@@ -30,3 +30,11 @@ Fork 本仓库到你的储存库然后按照以下内容编辑 config.env，之�
 
 
 其他的按需求修改。
+
+
+## 感谢
+- [rifsxd](https://github.com/rifsxd/KernelSU-Next)
+- [AnyKernel3](https://github.com/osm0sis/AnyKernel3)
+- [KernelSU](https://github.com/tiann/KernelSU).
+- [xiaoleGun](https://github.com/xiaoleGun/KernelSU_Action)
+
