@@ -215,12 +215,12 @@ jobs:
       if: env.HAVE_SOURCE_BOOT_IMAGE == 'true' && env.CHECK_FILE_IS_OK == 'true' && env.BUILD_BOOT_IMG == 'true'
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        wget https://github.com/tomxi1997/KernelSU-Next-Action/releases/download/v1/magiskboot.tar.xz
-        tar -xf magiskboot.tar.xz
+        wget -O magisk.tar.xz https://github.com/tomxi1997/KernelSU-Next-Action/releases/download/v1/magiskboot.tar.xz
+        tar -xf magisk.tar.xz
         sudo chmod +x magiskboot
         mkdir -p ./tmp
         cp magiskboot ./tmp
-        cp boot-source.img ./boot.img
+        cp boot-source.img ./tmp/boot.img
         cd ./tmp
         ./magiskboot unpack boot.img 
         rm kernel
