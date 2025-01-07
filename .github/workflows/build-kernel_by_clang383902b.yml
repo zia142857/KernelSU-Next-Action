@@ -224,7 +224,7 @@ jobs:
         cd ./tmp
         ./magiskboot unpack boot.img 
         rm kernel
-        cp android-kernel/out/arch/${{ env.ARCH }}/boot/${{ env.KERNEL_IMAGE_NAME }} ./tmp/kernel
+        cp ../android-kernel/out/arch/${{ env.ARCH }}/boot/${{ env.KERNEL_IMAGE_NAME }} ./kernel
         ./magiskboot repack boot.img 
         cp new-boot.img $GITHUB_WORKSPACE/kernel_workspace/boot.img
         cd ..
