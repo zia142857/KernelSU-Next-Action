@@ -1,3 +1,4 @@
+# 测试一加6 氢11
 # KernelSU-Next-Action
 
 只有clang-r383902b和谷歌GCC 4.9,支持编译，4.19以下的绝大多数内核，非gki内核
